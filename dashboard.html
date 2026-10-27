@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Application Dashboard</h1>
+
+        <!-- Welcome Message -->
+        <div class="welcome">
+            <p id="welcomeMessage"></p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="cards">
+
+            <div class="card">
+                <p>Total Applications</p>
+                <h2 id="totalApplications">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Shortlisted</p>
+                <h2 id="shortlisted">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Interviews</p>
+                <h2 id="interviews">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Selected</p>
+                <h2 id="selected">0</h2>
+            </div>
+
+            <div class="card">
+                <p>Rejected</p>
+                <h2 id="rejected">0</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Your JavaScript -->
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
